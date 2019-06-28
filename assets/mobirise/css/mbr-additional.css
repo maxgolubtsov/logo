@@ -1821,8 +1821,16 @@ body {
 .cid-ruoIigsTFx .dropdown-item:hover {
   color: #c1c1c1 !important;
 }
+.cid-ruH2Ba46yi {
+  background-image: url("../../../assets/images/0.jpg");
+}
+.cid-ruH2obybzG {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  background-image: url("../../../assets/images/bg-v.jpg");
+}
 .cid-ruoiMUwWLC {
-  background-color: #21212c;
+  background-image: url("../../../assets/images/top-2.jpg");
 }
 .cid-ruoiMUwWLC .form-control,
 .cid-ruoiMUwWLC .form-control:focus {
@@ -1846,13 +1854,70 @@ body {
     padding-right: 5rem;
   }
 }
+.cid-ruH0qLof6S {
+  background: #000000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cid-ruH0qLof6S .image-block {
+  margin: auto;
+}
+.cid-ruH0qLof6S figcaption {
+  position: relative;
+}
+.cid-ruH0qLof6S figcaption div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .cid-ruH0qLof6S .image-block {
+    width: 100% !important;
+  }
+}
 .cid-ruoSRpNWVl {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   background-color: #ffffff;
 }
 .cid-ruoSRpNWVl .mbr-section-subtitle {
   color: #767676;
+}
+.cid-ruGIl1coBW {
+  background: #ffffff;
+}
+.cid-ruGIl1coBW .image-block {
+  margin: auto;
+  width: 100% !important;
+}
+.cid-ruGIl1coBW .mbr-figure {
+  margin: 0 auto;
+}
+.cid-ruGIl1coBW figcaption {
+  position: relative;
+}
+.cid-ruGIl1coBW figcaption div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .cid-ruGIl1coBW .image-block {
+    width: 100% !important;
+  }
+}
+.cid-ruGQ6ZPQ50 {
+  background: #232323;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.cid-ruGQ6ZPQ50 .video-block {
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .cid-ruGQ6ZPQ50 .video-block {
+    width: 100% !important;
+  }
 }
 .cid-ruoRbxDnSK {
   padding-top: 0px;
@@ -1915,6 +1980,19 @@ body {
   -webkit-transition: 0.2s background ease-in-out;
   transition: 0.2s background ease-in-out;
   background: linear-gradient(to left, #554346, #45505b) !important;
+}
+.cid-ruGRVkCwbK {
+  background: #232323;
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
+.cid-ruGRVkCwbK .video-block {
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .cid-ruGRVkCwbK .video-block {
+    width: 100% !important;
+  }
 }
 .cid-ruoZ7bI07R {
   padding-top: 45px;
@@ -2086,4 +2164,9 @@ body {
 }
 .cid-ruolX1fyAX H1 {
   color: #21212c;
+}
+.cid-ruH4dCarPf {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #2e2e2e;
 }
