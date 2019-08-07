@@ -1416,12 +1416,12 @@ body {
 }
 .cid-ruoIigsTFx .navbar {
   padding: .5rem 0;
-  background: #7e7e7e;
+  background: #7f1933;
   transition: none;
   min-height: 77px;
 }
 .cid-ruoIigsTFx .navbar-dropdown.bg-color.transparent.opened {
-  background: #7e7e7e;
+  background: #7f1933;
 }
 .cid-ruoIigsTFx a {
   font-style: normal;
@@ -1512,7 +1512,7 @@ body {
   padding-bottom: 0;
 }
 .cid-ruoIigsTFx .dropdown .dropdown-menu {
-  background: #7e7e7e;
+  background: #7f1933;
   display: none;
   position: absolute;
   min-width: 5rem;
@@ -2151,7 +2151,7 @@ body {
   }
 }
 .cid-ruoiMUwWLC {
-  background-image: url("../../../assets/images/top-2.jpg");
+  background-color: #e1ab3e;
 }
 .cid-ruoiMUwWLC .form-control,
 .cid-ruoiMUwWLC .form-control:focus {
