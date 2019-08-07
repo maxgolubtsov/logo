@@ -2151,7 +2151,7 @@ body {
   }
 }
 .cid-ruoiMUwWLC {
-  background-color: #e1ab3e;
+  background-color: #e1b51d;
 }
 .cid-ruoiMUwWLC .form-control,
 .cid-ruoiMUwWLC .form-control:focus {
@@ -2174,6 +2174,10 @@ body {
   .cid-ruoiMUwWLC .content-container {
     padding-right: 5rem;
   }
+}
+.cid-ruoiMUwWLC .mbr-text,
+.cid-ruoiMUwWLC .mbr-section-btn {
+  color: #4f4943;
 }
 .cid-ruolX1fyAX {
   padding-top: 90px;
