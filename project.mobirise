@@ -48,7 +48,7 @@
     ],
     "favicon": "@PROJECT_PATH@/assets/images/1.png",
     "noImageResize": "true",
-    "uniqCompNum": 23,
+    "uniqCompNum": 26,
     "versionPublish": "4.10.7",
     "screenshot": "screenshot.png"
   },
@@ -871,38 +871,6 @@
           "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полная ширина\" name=\"fullWidth\" checked>\n\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"4\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"checkbox\" title=\"Текст\" name=\"showText\">        \n        \n        <input type=\"range\" inline title=\"Ширина\" name=\"imageSize\" min=\"20\" max=\"100\" value=\"100\" step=\"1\" condition=\"fullWidth==false\">\n\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\" condition=\"fullWidth==false\">\n        <input type=\"checkbox\" title=\"Градиент\" name=\"gradientBg\" condition=\"fullWidth==false\">\n        <input type=\"color\" title=\"Цвет 2\" name=\"color2\" value=\"#149dcc\" condition=\"gradientBg && fullWidth==false\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <figure class=\"mbr-figure\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"image-block\" mbr-style=\"{'width':imageSize+'%'}\">\n            <img src=\"@PROJECT_PATH@/assets/images/bg-lo.jpg\" alt=\"Mobirise\" title>\n            <figcaption class=\"mbr-figure-caption mbr-figure-caption-over\" mbr-if=\"showText\">\n                <div mbr-text class=\"pb-5 px-3 mbr-white align-center mbr-fonts-style\" mbr-theme-style=\"display-1\" data-app-selector=\".mbr-figure-caption div\">\n                    Создавайте потрясающие сайты!\n                </div>\n            </figcaption>\n        </div>\n    </figure>\n</section>",
           "_cid": "ruGIl1coBW",
           "_anchor": "image2-g",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "background": "@bgColor",
-            "& when (@fullWidth = false)": {
-              "padding-top": "(@paddingTop * 15px)",
-              "padding-bottom": "(@paddingBottom * 15px)"
-            },
-            "& when (@gradientBg)": {
-              "background": "linear-gradient(0deg, @bgColor, @color2)"
-            },
-            ".video-block": {
-              "margin": "auto",
-              "& when (@fullWidth)": {
-                "width": "100% !important"
-              }
-            },
-            "@media (max-width: 768px)": {
-              ".video-block": {
-                "width": "100% !important"
-              }
-            }
-          },
-          "_name": "video3",
-          "_customHTML": "<section group=\"Images & Videos\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n    <input type=\"checkbox\" title=\"Полная ширина\" name=\"fullWidth\">\n\n    <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"0\" step=\"1\" condition=\"fullWidth==false\">\n    <input type=\"range\" inline title=\"Ширина\" name=\"videoSize\" min=\"20\" max=\"100\" value=\"79\" step=\"1\" condition=\"fullWidth==false\">\n\n    <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#232323\" condition=\"fullWidth==false\">\n    <input type=\"checkbox\" title=\"Градиент\" name=\"gradientBg\" condition=\"fullWidth==false\">\n    <input type=\"color\" title=\"Цвет 2\" name=\"color2\" value=\"#ffffff\" condition=\"gradientBg\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    \n    <figure class=\"mbr-figure align-center\" mbr-class=\"{'container':fullWidth==false}\">\n        <div class=\"video-block\" mbr-style=\"{'width':videoSize+'%'}\">\n            <div mbr-video>\n                <iframe src=\"https://vimeo.com/313957647?loop=0&autoplay=1\"></iframe>\n            </div>\n        </div>\n    </figure>\n</section>",
-          "_cid": "ruGQ6ZPQ50",
-          "_anchor": "video3-h",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
