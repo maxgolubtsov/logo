@@ -1858,57 +1858,6 @@ body {
     padding-left: 0;
   }
 }
-.cid-ruH2obybzG {
-  padding-top: 90px;
-  padding-bottom: 60px;
-  background-image: url("../../../assets/images/bg-v.jpg");
-}
-.cid-ruoiMUwWLC {
-  background-image: url("../../../assets/images/top-2.jpg");
-}
-.cid-ruoiMUwWLC .form-control,
-.cid-ruoiMUwWLC .form-control:focus {
-  background: #ffffff;
-  border: 1px solid #ffffff;
-}
-.cid-ruoiMUwWLC .form-container {
-  transition: all .2s;
-  border: 1px solid #ffffff;
-  padding: 1rem;
-}
-.cid-ruoiMUwWLC textarea.form-control {
-  min-height: 188px;
-}
-.cid-ruoiMUwWLC .input-group-btn {
-  justify-content: center;
-  -webkit-justify-content: center;
-}
-@media (min-width: 768px) {
-  .cid-ruoiMUwWLC .content-container {
-    padding-right: 5rem;
-  }
-}
-.cid-ruH0qLof6S {
-  background: #000000;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.cid-ruH0qLof6S .image-block {
-  margin: auto;
-}
-.cid-ruH0qLof6S figcaption {
-  position: relative;
-}
-.cid-ruH0qLof6S figcaption div {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-@media (max-width: 768px) {
-  .cid-ruH0qLof6S .image-block {
-    width: 100% !important;
-  }
-}
 .cid-ruoSRpNWVl {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -2015,6 +1964,11 @@ body {
   transition: 0.2s background ease-in-out;
   background: linear-gradient(to left, #554346, #45505b) !important;
 }
+.cid-ruH2obybzG {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  background-image: url("../../../assets/images/bg-v.jpg");
+}
 .cid-ruGRVkCwbK {
   background: #232323;
   padding-top: 15px;
@@ -2025,6 +1979,27 @@ body {
 }
 @media (max-width: 768px) {
   .cid-ruGRVkCwbK .video-block {
+    width: 100% !important;
+  }
+}
+.cid-ruH0qLof6S {
+  background: #000000;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cid-ruH0qLof6S .image-block {
+  margin: auto;
+}
+.cid-ruH0qLof6S figcaption {
+  position: relative;
+}
+.cid-ruH0qLof6S figcaption div {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .cid-ruH0qLof6S .image-block {
     width: 100% !important;
   }
 }
@@ -2186,6 +2161,31 @@ body {
   .cid-ruoCEeruwx .panel-item .card-img {
     padding: 0;
     padding-bottom: 1rem;
+  }
+}
+.cid-ruoiMUwWLC {
+  background-image: url("../../../assets/images/top-2.jpg");
+}
+.cid-ruoiMUwWLC .form-control,
+.cid-ruoiMUwWLC .form-control:focus {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+}
+.cid-ruoiMUwWLC .form-container {
+  transition: all .2s;
+  border: 1px solid #ffffff;
+  padding: 1rem;
+}
+.cid-ruoiMUwWLC textarea.form-control {
+  min-height: 188px;
+}
+.cid-ruoiMUwWLC .input-group-btn {
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+@media (min-width: 768px) {
+  .cid-ruoiMUwWLC .content-container {
+    padding-right: 5rem;
   }
 }
 .cid-ruolX1fyAX {
