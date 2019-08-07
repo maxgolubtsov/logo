@@ -1175,7 +1175,7 @@ pre {
     display: none;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1023px) {
   .navbar-toggleable-md .navbar-nav .dropdown-menu {
     position: static;
     float: none;
@@ -1185,7 +1185,7 @@ pre {
     padding-left: 0;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .navbar-toggleable-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1416,12 +1416,12 @@ body {
 }
 .cid-ruoIigsTFx .navbar {
   padding: .5rem 0;
-  background: #333333;
+  background: #7e7e7e;
   transition: none;
   min-height: 77px;
 }
 .cid-ruoIigsTFx .navbar-dropdown.bg-color.transparent.opened {
-  background: #333333;
+  background: #7e7e7e;
 }
 .cid-ruoIigsTFx a {
   font-style: normal;
@@ -1512,7 +1512,7 @@ body {
   padding-bottom: 0;
 }
 .cid-ruoIigsTFx .dropdown .dropdown-menu {
-  background: #333333;
+  background: #7e7e7e;
   display: none;
   position: absolute;
   min-width: 5rem;
@@ -1813,8 +1813,50 @@ body {
 .cid-ruoIigsTFx .dropdown-item:hover {
   color: #c1c1c1 !important;
 }
-.cid-ruH2Ba46yi {
-  background-image: url("../../../assets/images/0.jpg");
+.cid-ryskfDdoTJ {
+  background: linear-gradient(45deg, #181814, #ff3366);
+}
+.cid-ryskfDdoTJ .mbr-section-subtitle {
+  font-style: italic;
+  letter-spacing: 1rem;
+}
+.cid-rysuS69r5s {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+.cid-rysuS69r5s h4 {
+  text-align: left;
+  font-weight: 500;
+}
+.cid-rysuS69r5s p {
+  color: #767676;
+  text-align: left;
+  margin-bottom: 0;
+}
+.cid-rysuS69r5s .card-img {
+  text-align: left;
+  -webkit-flex: 1 0 auto;
+  flex: 1 0 auto;
+  width: auto;
+}
+.cid-rysuS69r5s .card-img span {
+  font-size: 72px;
+  color: #ff3366;
+}
+.cid-rysuS69r5s .card-box {
+  padding-left: 1rem;
+  word-break: break-word;
+  width: 100%;
+}
+@media (max-width: 991px) {
+  .cid-rysuS69r5s .card-img {
+    text-align: left;
+    padding-bottom: 0.75rem;
+  }
+  .cid-rysuS69r5s .card-box {
+    padding-left: 0;
+  }
 }
 .cid-ruH2obybzG {
   padding-top: 90px;
