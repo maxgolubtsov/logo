@@ -44,7 +44,7 @@
     ],
     "favicon": "@PROJECT_PATH@/assets/images/1.png",
     "noImageResize": "true",
-    "uniqCompNum": 20,
+    "uniqCompNum": 22,
     "versionPublish": "4.10.7",
     "screenshot": "screenshot.png"
   },
@@ -1161,6 +1161,190 @@
             },
             "& when (@bg-type = 'image')": {
               "background-image": "url(@bg-value)"
+            },
+            ".testimonial-text": {
+              "font-style": "italic",
+              "font-weight": "300"
+            },
+            ".mbr-author-name": {
+              "font-weight": "bold"
+            },
+            ".media-container-row": {
+              "word-wrap": "break-word",
+              "word-break": "break-word"
+            },
+            "@media (max-width: 991px)": {
+              ".mbr-figure, img": {
+                "max-height": "300px",
+                "width": "auto",
+                "margin": "auto"
+              },
+              ".media-content": {
+                "padding-top": "1.5rem !important"
+              }
+            }
+          },
+          "_name": "testimonials2",
+          "_customHTML": "<section class=\"testimonials2\" group=\"Testimonials\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n      <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n      <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n\n      <input type=\"range\" inline title=\"Размер медиа\" name=\"mediaSize\" min=\"10\" max=\"200\" step=\"5\" value=\"130\">\n\n      <fieldset type=\"background\" name=\"bg\" parallax>\n          <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background3.jpg\">\n          <input type=\"color\" title=\"Цвет фона\" value=\"#232323\" selected>\n          <input type=\"video\" title=\"Фоновое видео\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n      </fieldset>\n      <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n      <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n      <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters --> \n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-figure pr-lg-5\" mbr-style=\"{'width':mediaSize + '%'}\">\n              <img src=\"@PROJECT_PATH@/assets/images/3.jpeg\" alt title>\n            </div>\n            <div class=\"media-content px-3 align-self-center mbr-white py-2\">\n                    <p class=\"mbr-text testimonial-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".testimonial-text\">\n                       Разработка нейминга, логотипа и элементов фирменного стиля для проектной организиции МИРОС.</p>\n                    <p class=\"mbr-author-name pt-4 mb-2 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-author-name\">\n                       Заказчик</p>\n                    <p class=\"mbr-author-desc mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-author-desc\">\n                       МИРОС</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "rz6H9IIhj3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "testimonials2-k"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-slider .carousel-control": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-slider .carousel-control-prev": {
+              "left": "0",
+              "margin-left": "2.5rem"
+            },
+            ".mbr-slider .carousel-control-next": {
+              "right": "0",
+              "margin-right": "2.5rem"
+            },
+            ".mbr-slider .modal-body .close": {
+              "background": "#1b1b1b"
+            },
+            ".mbr-gallery-item > div::before": {
+              "content": "''",
+              "position": "absolute",
+              "left": "0",
+              "top": "0",
+              "width": "100%",
+              "height": "100%",
+              "background": "@overlayColor",
+              "opacity": "0",
+              "-webkit-transition": "0.2s opacity ease-in-out",
+              "transition": "0.2s opacity ease-in-out",
+              "& when (@gradOverlay)": {
+                "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+              }
+            },
+            ".mbr-gallery-item > div:hover": {
+              ".mbr-gallery-title::before": {
+                "background": "transparent !important"
+              },
+              "&:before": {
+                "opacity": "@overlayOpacity !important"
+              }
+            },
+            ".mbr-gallery-title": {
+              "font-size": ".9em",
+              "position": "absolute",
+              "display": "block",
+              "width": "100%",
+              "bottom": "0",
+              "padding": "1rem",
+              "color": "#fff",
+              "z-index": "2",
+              "&:before": {
+                "content": "\" \"",
+                "width": "100%",
+                "height": "100%",
+                "top": "0",
+                "left": "0",
+                "z-index": "-1",
+                "position": "absolute",
+                "background": "@overlayColor !important",
+                "opacity": "@overlayOpacity",
+                "-webkit-transition": "0.2s background ease-in-out",
+                "transition": "0.2s background ease-in-out",
+                "& when (@gradOverlay)": {
+                  "background": "linear-gradient(to left, @overlayColor, @overlayColor2) !important"
+                }
+              }
+            }
+          },
+          "_name": "gallery1",
+          "_customHTML": "<section class=\"mbr-gallery mbr-slider-carousel\" group=\"Sliders & Gallery\" plugins=\"Masonry,BootstrapCarouselSwipe,Gallery,VimeoPlayer,SliderVideo\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Полная ширина\" name=\"fullWidth\">\n        <input type=\"range\" title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"range\" title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"6\" inline>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#554346\">\n        <input type=\"checkbox\" title=\"Градиентное наложение\" name=\"gradOverlay\" checked>\n        <input type=\"color\" title=\"Наложение  Цвет 2\" name=\"overlayColor2\" value=\"#45505b\" condition=\"gradOverlay\">\n        <input type=\"range\" title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" inline>\n        <input type=\"color\" title=\"Цвет фона\" name=\"bgColor\" value=\"#ffffff\">\n\n        <input type=\"gallery\" title=\"Галерея\" name=\"gallery\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div mbr-class=\"{'container': !fullWidth}\">\n        <div mbr-gallery=\"gallery\" mbr-gallery-spacing=\"1\" mbr-gallery-show-text></div>\n    </div>\n\n</section>",
+          "_cid": "rz6HQ4YidR",
+          "_protectedParams": [
+            "text_all",
+            "gallery__filtersTextStyle",
+            "gallery__filtersBtnStyle",
+            "gallery"
+          ],
+          "_global": false,
+          "_once": false,
+          "_params": {
+            "text_all": "All",
+            "gallery__filtersTextStyle": "display-7",
+            "gallery__filtersBtnStyle": "btn-primary-outline",
+            "gallery": [
+              {
+                "tags": "Отзывчивый",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/60.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/6-800x579.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Визитка с логотипом",
+                "active": true
+              },
+              {
+                "tags": "Анимированный",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/71.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/7-800x579.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Элементы фирменного стиля",
+                "active": false
+              },
+              {
+                "tags": "Отзывчивый",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/42.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/4-800x579.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Использование логотипа в договоре",
+                "active": false
+              },
+              {
+                "tags": "Отзывчивый",
+                "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
+                "playVideo": false,
+                "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
+                "image": "@PROJECT_PATH@/assets/images/1-24.jpg",
+                "thumb": "@PROJECT_PATH@/assets/images/1-24-800x542.jpg",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Логотип МИРОС",
+                "active": false
+              }
+            ]
+          },
+          "_anchor": "gallery1-l"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
             }
           },
           "_name": "info3",
@@ -1595,7 +1779,7 @@
             }
           },
           "_name": "contacts3",
-          "_customHTML": "<section class=\"mbr-section contacts3\" group=\"Forms\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <!---->\n    <mbr-parameters>\n        <!---->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n        <!---->\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitleSect\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitleSect\">\n        <!---->\n        <input type=\"map\" title=\"Карта\" name=\"googleMap\">\n        <!---->\n        <input type=\"checkbox\" title=\"Show Col-1\" name=\"showCol1\" checked>\n        <input type=\"checkbox\" title=\"Show Col-2\" name=\"showCol2\" checked>\n        <input type=\"checkbox\" title=\"Show Col-3\" name=\"showCol3\" checked>\n        <input type=\"checkbox\" title=\"Show Col-4\" name=\"showCol4\" checked>\n        <!---->\n        <input type=\"checkbox\" title=\"Иконки\" name=\"checkIcons\" checked>\n        <input type=\"range\" inline title=\"Size Icons\" name=\"iconsSize\" min=\"1.5\" max=\"2.5\" step=\"0.1\" value=\"2\" condition=\"checkIcons\">\n        <!---->\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <!---->\n    <!--Overlay-->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <!--Container-->\n    <div class=\"container\">\n        <div class=\"row\">\n            <!--Titles-->\n            <div class=\"title col-12\">\n                <h2 mbr-if=\"showTitleSect\" class=\"align-left mbr-fonts-style\" mbr-theme-style=\"display-1\">Контакты</h2>\n                <h3 mbr-if=\"showSubtitleSect\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle pt-2 mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                    Subtitle\n                </h3>\n            </div>\n            <div class=\"col-12\">\n                <div class=\"row\">\n                    <div class=\"col-12 col-md-6\" mbr-if=\"showCol1\">\n                        <div class=\"wrapper\">\n                            <span class=\"iconfont-wrapper\" mbr-if=\"checkIcons\">\n                                <span mbr-icon class=\"amp-iconfont icon fa-thumbs-o-up fa\"></span>\n                            </span>\n                            <div class=\"b-info b-adress\">\n                                <h5 class=\"align-left mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                    О НАС</h5>\n                                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                                    Студия основана в 2010 году. <br>Специализируемся на разработке концепции продукта, дизайне упаковки, корпоративном брендинге, разработке логотипов и фирменных стилей.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"col-12 col-md-6\" mbr-if=\"showCol2\">\n                        <div class=\"wrapper\">\n                            <span class=\"iconfont-wrapper\" mbr-if=\"checkIcons\">\n                                <span mbr-icon class=\"amp-iconfont icon fa-phone fa\"></span>\n                            </span>\n                            <div class=\"b-info b-phone\">\n                                <h5 class=\"align-left mbr-fonts-style\" mbr-theme-style=\"display-5\">Контакты:&nbsp;</h5>\n                                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Тел.: <a href=\"tel:+74952019106\">+7 (495) 201-91-06</a><br>WhatsApp: <a href=\"https://wa.me/+79787503758\">+7 (978) 750-37-58</a>; &nbsp;(<a href=\"tg://resolve?domain=+79787503758\">Telegram</a> | <a href=\"viber://chat?number=+79787503758\">Viber</a> )<a href=\"tel:+74952019106\"><br></a><br>email: <a href=\"mailto:potok@rommstudio.ru\">potok@rommstudio.ru</a>\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"col-12 col-md-6\" mbr-if=\"showCol3\">\n                        <div class=\"wrapper\">\n                            <span class=\"iconfont-wrapper\" mbr-if=\"checkIcons\">\n                                <span mbr-icon class=\"amp-iconfont icon fa-comment-o fa socicon-instagram socicon\"></span>\n                            </span>\n                            <div class=\"b-info b-mail\">\n                                <h5 class=\"align-left mbr-fonts-style\" mbr-theme-style=\"display-5\">Instagram</h5>\n                                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Подпишитесь на наш аккаунт в instagram <a href=\"https://www.instagram.com/logo.romm/\" target=\"_blank\">@logo.romm</a><br></p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"col-12 col-md-6\" mbr-if=\"showCol4\">\n                        <div class=\"wrapper\">\n                            <span class=\"iconfont-wrapper\" mbr-if=\"checkIcons\">\n                                <span mbr-icon class=\"amp-iconfont icon fa-th-large fa\"></span>\n                            </span>\n                            <div class=\"b-info b-mail\">\n                                <h5 class=\"align-left mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                    Рабочее время:\n                                </h5>\n                                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                                    Для новых обращений. <br>Ежедневно. С 8-00 до 22-00.</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section contacts3\" group=\"Forms\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <!---->\n    <mbr-parameters>\n        <!---->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" value=\"6\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" value=\"6\">\n        <!---->\n        <input type=\"checkbox\" title=\"Название\" name=\"showTitleSect\" checked>\n        <input type=\"checkbox\" title=\"Подзаголовок\" name=\"showSubtitleSect\">\n        <!---->\n        <input type=\"map\" title=\"Карта\" name=\"googleMap\">\n        <!---->\n        <input type=\"checkbox\" title=\"Show Col-1\" name=\"showCol1\" checked>\n        <input type=\"checkbox\" title=\"Show Col-2\" name=\"showCol2\" checked>\n        <input type=\"checkbox\" title=\"Show Col-3\" name=\"showCol3\" checked>\n        <input type=\"checkbox\" title=\"Show Col-4\" name=\"showCol4\" checked>\n        <!---->\n        <input type=\"checkbox\" title=\"Иконки\" name=\"checkIcons\" checked>\n        <input type=\"range\" inline title=\"Size Icons\" name=\"iconsSize\" min=\"1.5\" max=\"2.5\" step=\"0.1\" value=\"2\" condition=\"checkIcons\">\n        <!---->\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background3.jpg\" parallax>\n            <input type=\"color\" title=\"Цвет фона\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Фоновое видео\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#efefef\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.9\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <!---->\n    <!--Overlay-->\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <!--Container-->\n    <div class=\"container\">\n        <div class=\"row\">\n            <!--Titles-->\n            <div class=\"title col-12\">\n                <h2 mbr-if=\"showTitleSect\" class=\"align-left mbr-fonts-style\" mbr-theme-style=\"display-1\">Контакты</h2>\n                <h3 mbr-if=\"showSubtitleSect\" data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle pt-2 mbr-light mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                    Subtitle\n                </h3>\n            </div>\n            <div class=\"col-12\">\n                <div class=\"row\">\n                    <div class=\"col-12 col-md-6\" mbr-if=\"showCol1\">\n                        <div class=\"wrapper\">\n                            <span class=\"iconfont-wrapper\" mbr-if=\"checkIcons\">\n                                <span mbr-icon class=\"amp-iconfont icon fa-thumbs-o-up fa\"></span>\n                            </span>\n                            <div class=\"b-info b-adress\">\n                                <h5 class=\"align-left mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                    О НАС</h5>\n                                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Design studio ROMM by Golubtsov Brothers' partnership - основана в 2010 году. <br>Специализируемся на разработке концепции продукта, дизайне упаковки, корпоративном брендинге, разработке логотипов и фирменных стилей.\n                                </p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"col-12 col-md-6\" mbr-if=\"showCol2\">\n                        <div class=\"wrapper\">\n                            <span class=\"iconfont-wrapper\" mbr-if=\"checkIcons\">\n                                <span mbr-icon class=\"amp-iconfont icon fa-phone fa\"></span>\n                            </span>\n                            <div class=\"b-info b-phone\">\n                                <h5 class=\"align-left mbr-fonts-style\" mbr-theme-style=\"display-5\">Контакты:&nbsp;</h5>\n                                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Тел.: <a href=\"tel:+74952019106\">+7 (495) 201-91-06</a><br>WhatsApp: <a href=\"https://wa.me/+79787503758\">+7 (978) 750-37-58</a>; &nbsp;(<a href=\"tg://resolve?domain=+79787503758\">Telegram</a> | <a href=\"viber://chat?number=+79787503758\">Viber</a> )<a href=\"tel:+74952019106\"><br></a>email: <a href=\"mailto:potok@rommstudio.ru\">potok@rommstudio.ru</a><br><br>Основная версия сайта: <a href=\"https://www.romm.pro/our-portfolio/\" target=\"_blank\">romm.pro</a>&nbsp;</p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"col-12 col-md-6\" mbr-if=\"showCol3\">\n                        <div class=\"wrapper\">\n                            <span class=\"iconfont-wrapper\" mbr-if=\"checkIcons\">\n                                <span mbr-icon class=\"amp-iconfont icon fa-comment-o fa socicon-instagram socicon\"></span>\n                            </span>\n                            <div class=\"b-info b-mail\">\n                                <h5 class=\"align-left mbr-fonts-style\" mbr-theme-style=\"display-5\">Instagram</h5>\n                                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">Подпишитесь на наш аккаунт в instagram <a href=\"https://www.instagram.com/logo.romm/\" target=\"_blank\">@logo.romm</a><br></p>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"col-12 col-md-6\" mbr-if=\"showCol4\">\n                        <div class=\"wrapper\">\n                            <span class=\"iconfont-wrapper\" mbr-if=\"checkIcons\">\n                                <span mbr-icon class=\"amp-iconfont icon fa-th-large fa\"></span>\n                            </span>\n                            <div class=\"b-info b-mail\">\n                                <h5 class=\"align-left mbr-fonts-style\" mbr-theme-style=\"display-5\">\n                                    Рабочее время:\n                                </h5>\n                                <p class=\"mbr-text align-left mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                                    Для новых обращений. <br>Ежедневно. С 8-00 до 22-00.</p>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "rz6Bb8DGCO",
           "_protectedParams": [],
           "_global": false,
@@ -1616,7 +1800,7 @@
             }
           },
           "_name": "footer6",
-          "_customHTML": "<section group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Эффект появления\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2019 ROMMSTUDIO - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Сверху\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Снизу\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Эффект появления\" name=\"reveal\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Фоновое изображение\" value=\"../_images/background5.jpg\">\n            <input type=\"color\" title=\"Цвет фона\" value=\"#2e2e2e\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Наложение\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Цвет наложения\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Прозрачность\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\">\n                    © Copyright 2019 Design studio ROMM by Golubtsov Brothers' partnership - All Rights Reserved\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "ruH4dCarPf",
           "_anchor": "footer6-w",
           "_protectedParams": [],
