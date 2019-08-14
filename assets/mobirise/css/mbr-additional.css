@@ -2349,35 +2349,6 @@ body {
     padding-bottom: 1rem;
   }
 }
-.cid-ruoiMUwWLC {
-  background-color: #e1b51d;
-}
-.cid-ruoiMUwWLC .form-control,
-.cid-ruoiMUwWLC .form-control:focus {
-  background: #ffffff;
-  border: 1px solid #ffffff;
-}
-.cid-ruoiMUwWLC .form-container {
-  transition: all .2s;
-  border: 1px solid #ffffff;
-  padding: 1rem;
-}
-.cid-ruoiMUwWLC textarea.form-control {
-  min-height: 188px;
-}
-.cid-ruoiMUwWLC .input-group-btn {
-  justify-content: center;
-  -webkit-justify-content: center;
-}
-@media (min-width: 768px) {
-  .cid-ruoiMUwWLC .content-container {
-    padding-right: 5rem;
-  }
-}
-.cid-ruoiMUwWLC .mbr-text,
-.cid-ruoiMUwWLC .mbr-section-btn {
-  color: #4f4943;
-}
 .cid-rz6RxNk9uY {
   padding-top: 60px;
   padding-bottom: 60px;
