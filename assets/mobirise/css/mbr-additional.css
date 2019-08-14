@@ -2300,6 +2300,41 @@ body {
 .cid-ruolX1fyAX H1 {
   color: #21212c;
 }
+.cid-rz6Bb8DGCO {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #ffffff;
+}
+.cid-rz6Bb8DGCO .title {
+  padding-bottom: 2.5rem;
+}
+.cid-rz6Bb8DGCO .mbr-text {
+  color: #767676;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+.cid-rz6Bb8DGCO .iconfont-wrapper {
+  display: flex;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 2rem;
+}
+.cid-rz6Bb8DGCO .iconfont-wrapper .amp-iconfont {
+  font-size: 2rem;
+}
+.cid-rz6Bb8DGCO .wrapper {
+  display: flex;
+  padding: 1rem 0;
+}
+.cid-rz6Bb8DGCO .wrapper .b-info {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .cid-rz6Bb8DGCO .iconfont-wrapper {
+    display: none;
+  }
+}
 .cid-ruH4dCarPf {
   padding-top: 30px;
   padding-bottom: 30px;
