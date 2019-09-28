@@ -43,7 +43,7 @@
       }
     ],
     "favicon": "@PROJECT_PATH@/assets/images/1.png",
-    "noImageResize": "true",
+    "noImageResize": "",
     "uniqCompNum": 15,
     "versionPublish": "4.10.10",
     "screenshot": "screenshot.png"
@@ -52,8 +52,8 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Уникальная разработка логотипа. Эксклюзив. Предоставляем варианты до оплаты.",
-        "meta_descr": "Уникальная разработка логотипа. Эксклюзив. Предоставляем варианты до оплаты.",
+        "title": "Уникальная разработка бренда. Эксклюзив. Предоставляем варианты до оплаты.",
+        "meta_descr": "Уникальная разработка бренда. Эксклюзив. Предоставляем варианты до оплаты.",
         "header_custom": "",
         "footer_custom": "<!-- Yandex.Metrika counter -->\n<script type=\"text/javascript\" >\n   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};\n   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})\n   (window, document, \"script\", \"https://mc.yandex.ru/metrika/tag.js\", \"ym\");\n\n   ym(29110060, \"init\", {\n        clickmap:true,\n        trackLinks:true,\n        accurateTrackBounce:true,\n        webvisor:true,\n        trackHash:true\n   });\n</script>\n<noscript><div><img src=\"https://mc.yandex.ru/watch/29110060\" style=\"position:absolute; left:-9999px;\" alt=\"\" /></div></noscript>\n<!-- /Yandex.Metrika counter -->\n\n<!-- Start of HubSpot Embed Code -->\n  <script type=\"text/javascript\" id=\"hs-script-loader\" async defer src=\"//js.hs-scripts.com/5752595.js\"></script>\n<!-- End of HubSpot Embed Code -->",
         "html_before": ""
@@ -1672,7 +1672,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/69.jpg",
+                "image": "@PROJECT_PATH@/assets/images/615.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/6-800x579.jpg",
                 "alt": "",
                 "title": "",
@@ -1685,7 +1685,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/710.jpg",
+                "image": "@PROJECT_PATH@/assets/images/716.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/7-800x579.jpg",
                 "alt": "",
                 "title": "",
@@ -1698,7 +1698,7 @@
                 "videoPreview": "@THEME_PATH@/components/_images/gallery/preview.jpg",
                 "playVideo": false,
                 "videoUrl": "https://www.youtube.com/watch?v=fwkKc6M60-0",
-                "image": "@PROJECT_PATH@/assets/images/411.jpg",
+                "image": "@PROJECT_PATH@/assets/images/417.jpg",
                 "thumb": "@PROJECT_PATH@/assets/images/4-800x579.jpg",
                 "alt": "",
                 "title": "",
