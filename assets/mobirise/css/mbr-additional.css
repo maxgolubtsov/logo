@@ -4,6 +4,7 @@
 
 
 
+
 body {
   font-family: Poppins;
   font-style: normal;
@@ -37,7 +38,7 @@ body {
   font-size: 1.5rem;
 }
 .display-7 {
-  font-family: undefined;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.06rem;
 }
 /* ---- Fluid typography for mobile devices ---- */
