@@ -9002,6 +9002,33 @@ body {
 .cid-rGhDL5xLQ6 .dropdown-item:hover {
   color: #4284df;
 }
+.cid-rIxecFGkUd {
+  background-image: url("../../../assets/images/isometric-stationery-mock-up-3.jpg");
+}
+.cid-rIxecFGkUd .media-content .btn-bgr {
+  z-index: 0;
+}
+.cid-rIxecFGkUd .mbr-overlay {
+  background: linear-gradient(90deg, #52e2dd, #8120c9);
+}
+@media (min-width: 992px) {
+  .cid-rIxecFGkUd .media-content {
+    -webkit-flex-basis: auto;
+    flex-basis: auto;
+  }
+}
+@media (max-width: 991px) {
+  .cid-rIxecFGkUd {
+    text-align: center !important;
+  }
+  .cid-rIxecFGkUd .mbr-text {
+    text-align: center;
+  }
+}
+.cid-rIxecFGkUd .media-container-row {
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
 .cid-rGhDL5xLQ6 .navbar {
   padding: .5rem 0;
   background: #333333;
@@ -9730,33 +9757,6 @@ body {
   .cid-rIJbKvljRU .mbr-text {
     text-align: center;
   }
-}
-.cid-rIxecFGkUd {
-  background-image: url("../../../assets/images/isometric-stationery-mock-up-3.jpg");
-}
-.cid-rIxecFGkUd .media-content .btn-bgr {
-  z-index: 0;
-}
-.cid-rIxecFGkUd .mbr-overlay {
-  background: linear-gradient(90deg, #52e2dd, #8120c9);
-}
-@media (min-width: 992px) {
-  .cid-rIxecFGkUd .media-content {
-    -webkit-flex-basis: auto;
-    flex-basis: auto;
-  }
-}
-@media (max-width: 991px) {
-  .cid-rIxecFGkUd {
-    text-align: center !important;
-  }
-  .cid-rIxecFGkUd .mbr-text {
-    text-align: center;
-  }
-}
-.cid-rIxecFGkUd .media-container-row {
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
 }
 .cid-rGnqWSTlt5 {
   background-image: url("../../../assets/images/001-2000x1333.png");
